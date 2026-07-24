@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 font-mono text-xs text-muted sm:flex-row">
         <p>
           <span className="text-green-dim">© {new Date().getFullYear()}</span>{" "}
-          {profile.name}. Built with Next.js.
+          {profile.name}
         </p>
         <p className="text-green-deep">
           &lt;/&gt; designed &amp; coded with intent

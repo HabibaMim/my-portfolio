@@ -60,7 +60,7 @@ export default function Navbar() {
 
         <a
           href={profile.resumeUrl}
-          download
+          
           className="hidden rounded-sm border border-green-dim bg-green-deep/40 px-4 py-2 font-mono text-[13px] font-medium text-green-soft transition-colors hover:border-green hover:bg-green-deep/70 hover:text-green md:inline-block"
         >
           resume.pdf ↓
@@ -95,7 +95,7 @@ export default function Navbar() {
           </ul>
           <a
             href={profile.resumeUrl}
-            download
+            
             onClick={() => setOpen(false)}
             className="mt-3 block rounded-sm border border-green-dim bg-green-deep/40 px-4 py-3 text-center font-medium text-green-soft"
           >

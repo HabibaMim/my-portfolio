@@ -6,30 +6,20 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-20 border-t border-border px-5 py-20 sm:px-8">
       <div className="mx-auto max-w-4xl">
-        <SectionHeading eyebrow="./send-message.sh" title="Get In Touch" />
+        <SectionHeading eyebrow="./send-message.sh" title="Let's Connect" />
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
-          Have a project in mind or just want to say hi? My inbox — and terminal — are always open.
+          Have a project in mind or want to collaborate? My inbox is always open.
         </p>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-3">
+        <div className="mt-8 ">
           <ContactCard
             icon={Mail}
             label="Email"
             value={profile.email}
             href={`mailto:${profile.email}`}
           />
-          <ContactCard
-            icon={Phone}
-            label="Phone"
-            value={profile.phone}
-            href={`tel:${profile.phone.replace(/\s+/g, "")}`}
-          />
-          <ContactCard
-            icon={MessageCircle}
-            label="WhatsApp"
-            value={profile.whatsapp}
-            href={`https://wa.me/${profile.whatsapp.replace(/[^\d]/g, "")}`}
-          />
+         
+        
         </div>
       </div>
     </section>

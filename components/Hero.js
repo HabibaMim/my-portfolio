@@ -53,13 +53,13 @@ export default function Hero() {
             <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
             <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
             <span className="ml-3 font-mono text-xs text-muted">
-              guest@portfolio: ~
+              dev@portfolio: ~
             </span>
           </div>
 
           <div className="p-6 font-mono text-sm leading-relaxed sm:p-8 sm:text-base">
             <p className="text-muted">
-              <span className="text-green">guest@portfolio</span>
+              <span className="text-green">dev@portfolio</span>
               <span className="text-muted">:</span>
               <span className="text-green-soft">~$</span> whoami
             </p>
@@ -78,7 +78,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href={profile.resumeUrl}
-                download
+                
                 className="rounded-sm bg-green px-5 py-3 text-sm font-bold text-[#04140c] transition-transform hover:scale-[1.03] hover:bg-green-soft"
               >
                 View / Download Resume
@@ -87,11 +87,11 @@ export default function Hero() {
                 href="#contact"
                 className="rounded-sm border border-border px-5 py-3 text-sm font-medium text-text transition-colors hover:border-green hover:text-green"
               >
-                Get in touch
+                Let's Connect
               </a>
             </div>
 
-            <div className="mt-7 flex items-center gap-4 border-t border-border pt-6">
+            <div className="mt-7 flex items-center sm:pb-0 pb-9 gap-4 border-t border-border pt-6">
               {profile.socials.map((s) => {
                 const Icon = iconMap[s.icon];
                 return (
