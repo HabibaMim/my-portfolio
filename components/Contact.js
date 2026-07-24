@@ -11,12 +11,19 @@ export default function Contact() {
           Have a project in mind or want to collaborate? My inbox is always open.
         </p>
 
-        <div className="mt-8 ">
+        <div className="mt-8 grid md:grid-cols-2 gap-2">
           <ContactCard
             icon={Mail}
             label="Email"
             value={profile.email}
             href={`mailto:${profile.email}`}
+          />
+
+          <ContactCard
+            icon={Phone}
+            label="Phone"
+            value={profile.phone}
+            href={`mailto:${profile.phone}`}
           />
          
         
