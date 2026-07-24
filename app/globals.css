@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050806;
+  --bg-panel: #0a120d;
+  --bg-panel-2: #0e1a13;
+  --border: #16301f;
+  --green: #39ff8c;
+  --green-soft: #8bffc0;
+  --green-dim: #17a869;
+  --green-deep: #0d3b28;
+  --text: #e8fff2;
+  --muted: #7fa898;
+  --amber: #ffb454;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--bg-panel);
+  --color-panel-2: var(--bg-panel-2);
+  --color-border: var(--border);
+  --color-green: var(--green);
+  --color-green-soft: var(--green-soft);
+  --color-green-dim: var(--green-dim);
+  --color-green-deep: var(--green-deep);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-amber: var(--amber);
+  --font-display: "JetBrains Mono", "Fira Code", "SFMono-Regular", ui-monospace,
+    Menlo, Consolas, monospace;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", ui-monospace, Menlo, Consolas,
+    monospace;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--green);
+  color: #05130c;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--green-deep);
+  border-radius: 999px;
+}
+
+.terminal-glow {
+  text-shadow: 0 0 18px rgba(57, 255, 140, 0.35);
+}
+
+.blink-cursor::after {
+  content: "";
+  display: inline-block;
+  width: 0.55ch;
+  margin-left: 2px;
+  background: var(--green);
+  height: 1em;
+  vertical-align: -0.15em;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .blink-cursor::after {
+    animation: none;
+  }
+}
