@@ -8,9 +8,7 @@ export default function Footer() {
           <span className="text-green-dim">© {new Date().getFullYear()}</span>{" "}
           {profile.name}
         </p>
-        <p className="text-green-deep">
-          &lt;/&gt; designed &amp; coded with intent
-        </p>
+        
       </div>
     </footer>
   );
