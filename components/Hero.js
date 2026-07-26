@@ -81,7 +81,7 @@ export default function Hero() {
                 
                 className="rounded-sm bg-green px-5 py-3 text-sm font-bold text-[#04140c] transition-transform hover:scale-[1.03] hover:bg-green-soft"
               >
-                Download Resume
+                Resume
               </a>
               <a
                 href="#contact"
